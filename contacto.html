@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="images/favicon.ico" />
+    <title>Inicio</title>
+</head>
+
+<body>
+    <div class="navbar-fixed">
+        <nav>
+            <div class="nav-wrapper white">
+                <div class="container">
+                    <a href="#!" class="brand-logo"><img src="images/logo_boton_inicio.png" alt="logo_etica_salud"></a>
+                </div>
+                <ul class="right hide-on-med-and-down cyan darken-1">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="info.html">Quienes Somos</a></li>
+                    <li><a href="">Coberturas</a></li>
+                    <li><a href="">Cartilla Online</a></li>
+                    <li><a href="contacto.html">Contactos</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <h1 class="center-align">¡Contactanos!</h1>
+        <p>Estaremos gustosos de responder todas tus inquietudes, solo llena este formulario con los datos necesarios y pronto nos pondremos en contacto contigo</p>
+        <div class="row">
+            <form class="col s6 formulario">
+                <div class="input-field col s12">
+                    <input placeholder="Tu Nombre y Apellido..." id="nombre" type="text" class="validate">
+                    <label for="nombre">Nombre Y Apellido</label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="El asunto..." id="nombre" type="text" class="validate">
+                    <label for="nombre">Asunto</label>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Tu Telefono..." id="number" type="number" class="validate">
+                    <label for="nombre">Telefono</label>
+                    <span class="helper-text" data-error="No es un numero valido" data-success="¡Correcto!"></span>
+                </div>
+                <div class="input-field col s12">
+                    <input placeholder="Tu correo..." id="email" type="email" class="validate">
+                    <label for="nombre">Correo</label>
+                    <span class="helper-text" data-error="Correo invalido" data-success="¡Correcto!"></span>
+                </div>
+                <div class="input-field col s12">
+                    <textarea id="textarea1" class="materialize-textarea" placeholder="Tu Mensaje..."></textarea>
+                    <label for="textarea1">Mensaje</label>
+                </div>
+            </form>
+            <div class="col s6">
+                <div class="row">
+                    <div class="col s12">
+                        <h5 class="center-align">Nos puedes encontrar en</h5>
+                    </div>
+                    <div class="col s12">
+                        <iframe width="600" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=Maip%C3%BA%20509%20C1006ACE%20CABA&key=AIzaSyCgGWRhm8MHd0_fCv8gKV0UX_Sbcqx-6yc" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="page-footer cyan darken-1">
+        <div class="container">
+            <div class="row">
+                <div class="col l6 s12">
+                    <h5 class="white-text">Informacion de interes</h5>
+                    <p class="grey-text text-lighten-4">Maipu 509 - Piso 3 - C1006ACE - CABA - Argentina</p>
+                    <p class="grey-text text-lighten-4">Tel:. 5279-9820</p>
+                    <p class="grey-text text-lighten-4">info@eticasalud.com.ar</p>
+                    <p class="grey-text text-lighten-4">Horario de atención de Lunes a Viernes de 10 a 18hs.</p>
+                    <p class="grey-text text-lighten-4">Paramedic servicio de urgencia y emergencias Tel: 0810-666-0911 Médico a domicilio Tel: 5777-5555 Centro de atención permanente las 24 horas de los 365 días del año.
+                    </p>
+                </div>
+                <div class="col l4 offset-l2 s12">
+                    <h5 class="white-text">¡Siguenos en nuestra redes!</h5>
+                    <ul>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="images/fb.png" alt="">Facebook</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="images/ig.png" alt="">Instagram</a></li>
+                        <li><a class="grey-text text-lighten-3" href="#!"><img src="images/tw.png" alt="">Twitter</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                © 2018 Empuje Argentina
+                <a class="grey-text text-lighten-4 right" href="http://empuje.com.ar/">Nuestra web</a>
+            </div>
+        </div>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.js"></script>
+    <script>
+    $(document).ready(function() {
+        $('.slider').slider();
+    });
+    $(document).ready(function() {
+        $('.parallax').parallax();
+    });
+    </script>
+</body>
+
+</html>
