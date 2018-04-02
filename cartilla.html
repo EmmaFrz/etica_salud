@@ -14,7 +14,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper white">
-                    <a href="#!" class="brand-logo"><img src="images/logo_boton_inicio.png" alt="logo_etica_salud"></a>
+                <a href="#!" class="brand-logo"><img src="images/logo_boton_inicio.png" alt="logo_etica_salud"></a>
                 <ul class="right hide-on-med-and-down cyan darken-1">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="info.html">Quienes Somos</a></li>
@@ -39,7 +39,7 @@
     <div class="container">
         <div class="row">
             <div class="col s6">
-                <img src="images/seleccion.jpg" alt="" class="foo">
+                <img src="images/loading.gif" data-src="images/seleccion.jpg" alt="seleccion" class="foo">
             </div>
             <div class="col s6">
                 <h5 class="cyan-text center-align foo">ETICA SALUD</h5>
@@ -75,7 +75,7 @@
                 <div class="cyan divider"></div>
             </div>
             <div class="col s12">
-                <img src="images/listado.png" alt="" class="foo">
+                <img src="images/loading.gif" data-src="images/listado.png" alt="listado" class="foo">
             </div>
         </div>
     </div>
@@ -111,6 +111,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/blazy.min.js"></script>
     <script>
     $(document).ready(function() {
         $('.slider').slider();
@@ -120,6 +121,10 @@
     });
     window.sr = ScrollReveal();
     sr.reveal('.foo', { duration: 500 });
+
+    var bLazy = new Blazy({
+        selector: 'img' // all images
+    });
     </script>
 </body>
 

@@ -53,7 +53,7 @@
         <h4 class="foo">NUESTRA EXTENSA RED DE COBERTURA <span class="cyan-text">DE ETICA SALUD</span></h4>
         <div class="row">
             <div class="col s4 foo">
-                <img src="images/cobertura.jpg" alt="" class="foo">
+                <img src="images/loading.gif" data-src="images/cobertura.jpg" alt="cobertura" class="foo">
                 <h5 class="cyan-text foo"> ALCANCE REAL DE LA COBERTURA DE ÉTICA SALUD</h5>
                 <p align="justify" class="foo">La amplia red asistencial de Ética Salud está constituida por 69 centros médicos distribuidos a lo largo y ancho de la Provincia de Buenos Aires de la siguiente manera:</p>
                 <ul class="foo">
@@ -64,7 +64,7 @@
                 </ul>
             </div>
             <div class="col s4 foo">
-                <img src="images/mision.jpg" alt="" class="foo">
+                <img src="images/loading.gif" data-src="images/mision.jpg" alt="cobertura" class="foo">
                 <h5 class="cyan-text foo"> SERVICIOS DE ODONTOLOGIA</h5>
                 <p align="justify" class="foo">Te ofrecemos el servicio de odontología a través de un amplio conjunto de centros distribuidos por todo Buenos Aires:</p>
                 <ul class="foo">
@@ -97,25 +97,25 @@
         <div class="container">
             <div class="row">
                 <div class="col s3 white-text foo">
-                    <img src="images/persona.jpg" alt="" class="circulo responsive-img">
+                    <img src="images/loading.gif" data-src="images/persona.jpg" alt="testimonios" class="circulo responsive-img">
                     <h5 class="center-align">Cliente feliz</h5>
                     <p align="justify">Ella fue al cirujano y quedo full contenta con la operación</p>
                     <a class="waves-effect waves-light btn-large cyan darken-1">Descubre</a>
                 </div>
                 <div class="col s3 white-text foo">
-                    <img src="images/persona.jpg" alt="" class="circulo responsive-img">
+                    <img src="images/loading.gif" data-src="images/persona.jpg" alt="testimonios" class="circulo responsive-img">
                     <h5 class="center-align">Cliente feliz</h5>
                     <p align="justify">Ella fue al cirujano y quedo full contenta con la operación</p>
                     <a class="waves-effect waves-light btn-large cyan darken-1">Descubre</a>
                 </div>
                 <div class="col s3 white-text foo">
-                    <img src="images/persona.jpg" alt="" class="circulo responsive-img">
+                    <img src="images/loading.gif" data-src="images/persona.jpg" alt="testimonios" class="circulo responsive-img">
                     <h5 class="center-align">Cliente feliz</h5>
                     <p align="justify">Ella fue al cirujano y quedo full contenta con la operación</p>
                     <a class="waves-effect waves-light btn-large cyan darken-1">Descubre</a>
                 </div>
                 <div class="col s3 white-text foo">
-                    <img src="images/persona.jpg" alt="" class="circulo responsive-img">
+                    <img src="images/loading.gif" data-src="images/persona.jpg" alt="testimonios" class="circulo responsive-img">
                     <h5 class="center-align">Cliente feliz</h5>
                     <p align="justify">Ella fue al cirujano y quedo full contenta con la operación</p>
                     <a class="waves-effect waves-light btn-large cyan darken-1">Descubre</a>
@@ -168,6 +168,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/blazy.min.js"></script>
     <script>
     $(document).ready(function() {
         $('.slider').slider();
@@ -177,6 +178,10 @@
     });
     window.sr = ScrollReveal();
     sr.reveal('.foo', { duration: 500 });
+
+    var bLazy = new Blazy({
+        selector: 'img' // all images
+    });
     </script>
 </body>
 

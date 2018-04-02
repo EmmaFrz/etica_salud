@@ -14,7 +14,7 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper white">
-                    <a href="#!" class="brand-logo"><img src="images/logo_boton_inicio.png" alt="logo_etica_salud"></a>
+                <a href="#!" class="brand-logo"><img src="images/logo_boton_inicio.png" alt="logo_etica_salud"></a>
                 <ul class="right hide-on-med-and-down cyan darken-1">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="info.html">Quienes Somos</a></li>
@@ -30,7 +30,7 @@
         <p>Estaremos gustosos de responder todas tus inquietudes, solo llena este formulario con los datos necesarios y pronto nos pondremos en contacto contigo</p>
         <div class="row">
             <div class="col s6">
-                <img src="images/medica.png" alt="" class="foo">
+                <img src="images/loading.gif" data-src="images/medica.png" alt="contacto" class="foo">
             </div>
             <form class="col s6 foo">
                 <div class="input-field col s12">
@@ -100,6 +100,7 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script type="text/javascript" src="js/scrollreveal.min.js"></script>
+    <script type="text/javascript" src="js/blazy.min.js"></script>
     <script>
     $(document).ready(function() {
         $('.slider').slider();
@@ -109,6 +110,10 @@
     });
     window.sr = ScrollReveal();
     sr.reveal('.foo', { duration: 500 });
+
+    var bLazy = new Blazy({
+        selector: 'img' // all images
+    });
     </script>
 </body>
 
