@@ -14,22 +14,24 @@
     <div class="navbar-fixed">
         <nav>
             <div class="nav-wrapper white">
-                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons cyan-text">menu</i></a>
                 <a href="#!" class="brand-logo"><img src="images/logo_boton_inicio.png" alt="logo_etica_salud"></a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger cyan-text"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down cyan darken-1">
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="info.html">Quienes Somos</a></li>
-                    <li><a href="cartilla.html">Cartilla Online</a></li>
-                    <li><a href="contacto.html">Contactos</a></li>
-                </ul>
-                <ul class="sidenav white-text cyan darken-1 " id="mobile-demo">
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="info.html">Quienes Somos</a></li>
+                    <li><a href="cobertura.html">Cobertura</a></li>
                     <li><a href="cartilla.html">Cartilla Online</a></li>
                     <li><a href="contacto.html">Contactos</a></li>
                 </ul>
             </div>
         </nav>
+        <ul class="sidenav cyan darken-1 white-text" id="mobile-demo">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="info.html">Quienes Somos</a></li>
+            <li><a href="cobertura.html">Cobertura</a></li>
+            <li><a href="cartilla.html">Cartilla Online</a></li>
+            <li><a href="contacto.html">Contactos</a></li>
+        </ul>
     </div>
     <div class="container">
         <div class="row">
@@ -112,6 +114,9 @@
     <script type="text/javascript" src="js/blazy.min.js"></script>
     <script>
     $(document).ready(function() {
+        $('.sidenav').sidenav();
+    });
+    $(document).ready(function() {
         $('.slider').slider();
     });
     $(document).ready(function() {
@@ -122,10 +127,6 @@
 
     var bLazy = new Blazy({
         selector: 'img' // all images
-    });
-
-    $(document).ready(function() {
-        $('.sidenav').sidenav();
     });
     </script>
 </body>
